@@ -1,4 +1,4 @@
-*VenueHub: Smart HVAC AI Monitoring Platform
+* VenueHub: Smart HVAC AI Monitoring Platform
 VenueHub is a real-time, AI-driven facility monitoring dashboard designed to optimize HVAC (Heating, Ventilation, and Air Conditioning) systems. By leveraging machine learning, the platform predicts optimal climate control actions, monitors live room occupancy, and visualizes power consumption and operating costs across multiple venue spaces.
 
 🌟 Key Features

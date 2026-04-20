@@ -44,6 +44,6 @@ To run the full stack on your local machine, you need to start both the Python s
 * Prerequisites
   Node.js & npm
 
-  Python 3.x
+* Python 3.x
   
-  Pip packages: pandas, scikit-learn
+* Pip packages: pandas, scikit-learn

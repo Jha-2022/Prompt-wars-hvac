@@ -18,19 +18,17 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# Copy Python requirements and install
-# Note: Since there is no requirements.txt, we install manually based on imports
+# Install Python dependencies required for train_model3.py
 RUN pip install --no-cache-dir pandas scikit-learn
 
 # Copy the entire project
 COPY . .
 
-# Copy built frontend assets from stage 1
+# Copy built frontend assets from the first stage
 COPY --from=frontend-builder /app/project/frontend/dist ./project/frontend/dist
 
-# Expose the port the frontend will run on (Vite preview defaults to 4173)
+# Expose the port for the Vite preview
 EXPOSE 4173
 
-# Start both the simulation script and the frontend preview
-# Using a shell to run both processes
+# Run the simulation and the frontend preview simultaneously
 CMD python3 project/train_model3.py & cd project/frontend && npm run preview -- --host

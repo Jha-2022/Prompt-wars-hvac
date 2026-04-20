@@ -47,3 +47,14 @@ To run the full stack on your local machine, you need to start both the Python s
 * Python 3.x
   
 * Pip packages: pandas, scikit-learn
+
+1. Start the AI Simulation Engine
+Open a terminal in the root project directory (where train_model3.py is located):
+
+```
+# Install required Python packages if you haven't already
+pip install pandas scikit-learn
+
+# Run the simulation
+python train_model3.py
+```

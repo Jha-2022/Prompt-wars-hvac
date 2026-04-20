@@ -12,6 +12,39 @@ VenueHub is a real-time, AI-driven facility monitoring dashboard designed to opt
 
 * Dynamic Occupancy Tracking: Visualized via a live updating pie chart in the sidebar.
 
+📂Folder Structure
+```
+project/
+├── smart_hvac_dataset3_5000.csv
+├── train_model3.py
+└── frontend/
+    ├── .gitignore
+    ├── README.md
+    ├── eslint.config.js
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── vite.config.js
+    ├── public/
+    │   ├── dev-avatar.jpg
+    │   ├── dev-avatar.png
+    │   ├── favicon.svg
+    │   ├── icons.svg
+    │   └── venue_status.json
+    └── src/
+        ├── App.css
+        ├── App.jsx
+        ├── index.css
+        ├── main.jsx
+        ├── assets/
+        │   ├── hero.png
+        │   ├── react.svg
+        │   └── vite.svg
+        └── pages/
+            ├── dashboard.css
+            └── dashboard.jsx
+```
+
 🛠️ Tech Stack
 Frontend
 
@@ -58,3 +91,19 @@ pip install pandas scikit-learn
 # Run the simulation
 python train_model3.py
 ```
+Leave this terminal running. It will continuously update the venue_status.json file.
+
+2. Start the Frontend Application
+Open a second terminal and navigate to the frontend directory:
+
+```
+cd frontend
+
+# Install Node dependencies
+npm install
+
+# Start the Vite development server
+npm run dev
+```
+
+The terminal will provide a localhost URL (usually http://localhost:5173). Open this link in your browser to view the live dashboard.

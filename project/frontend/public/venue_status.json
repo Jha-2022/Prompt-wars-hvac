@@ -1,0 +1,74 @@
+{
+  "rooms": [
+    {
+      "id": "room-1",
+      "name": "Room A",
+      "capacity": 30,
+      "status": "maintenance",
+      "t_return": 32.3,
+      "people": 181,
+      "density": 0.91,
+      "co2": 1482,
+      "airflow": 0.23,
+      "action": "Decrease Temp ❄️",
+      "power_kw": 6.0,
+      "cost_hourly": 0.9
+    },
+    {
+      "id": "room-2",
+      "name": "Room B",
+      "capacity": 25,
+      "status": "maintenance",
+      "t_return": 31.2,
+      "people": 174,
+      "density": 0.87,
+      "co2": 1523,
+      "airflow": 0.26,
+      "action": "Decrease Temp ❄️",
+      "power_kw": 4.5,
+      "cost_hourly": 0.68
+    },
+    {
+      "id": "hall",
+      "name": "Grand Hall",
+      "capacity": 400,
+      "status": "maintenance",
+      "t_return": 29.0,
+      "people": 106,
+      "density": 0.53,
+      "co2": 1094,
+      "airflow": 0.87,
+      "action": "Decrease Temp ❄️",
+      "power_kw": 8.0,
+      "cost_hourly": 1.2
+    },
+    {
+      "id": "room-3",
+      "name": "Room C",
+      "capacity": 50,
+      "status": "maintenance",
+      "t_return": 28.3,
+      "people": 82,
+      "density": 0.41,
+      "co2": 926,
+      "airflow": 0.47,
+      "action": "Decrease Temp ❄️",
+      "power_kw": 5.0,
+      "cost_hourly": 0.75
+    },
+    {
+      "id": "room-4",
+      "name": "Room D",
+      "capacity": 40,
+      "status": "maintenance",
+      "t_return": 31.0,
+      "people": 181,
+      "density": 0.91,
+      "co2": 1450,
+      "airflow": 0.62,
+      "action": "Decrease Temp ❄️",
+      "power_kw": 4.5,
+      "cost_hourly": 0.68
+    }
+  ]
+}

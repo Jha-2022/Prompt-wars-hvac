@@ -10,8 +10,12 @@ function Dashboard() {
   const [activeTab, setActiveTab] = useState('map');
 
   useEffect(() => {
+    const API_URL = import.meta.env.VITE_API_URL
+      ? `${import.meta.env.VITE_API_URL}/venue_status`
+      : '/venue_status.json';
+
     const fetchData = () => {
-      fetch('/venue_status.json')
+      fetch(API_URL)
         .then(res => res.json())
         .then(data => {
           if (data && data.rooms) {
